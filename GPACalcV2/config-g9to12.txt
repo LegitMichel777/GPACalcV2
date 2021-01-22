@@ -1,0 +1,42 @@
+/* -----CONFIGURE SUBJECTS----- */
+    //IMPORTANT:Set all to lowercase
+    //CONFIGURE SUBJECT LEVEL GPA OFFSETS HERE
+    map<string,double,levelcmp>non_language_subject_offset;
+    non_language_subject_offset["ib"]=non_language_subject_offset["ap"]=0;
+    non_language_subject_offset["h"]=-0.2;
+    non_language_subject_offset["s+"]=-0.35;
+    non_language_subject_offset["s"]=-0.5;
+    map<string,double,levelcmp>chinese_subject_offset;
+    chinese_subject_offset["ib"]=0;
+    chinese_subject_offset["h+"]=-0.1;
+    chinese_subject_offset["h"]=-0.2;
+    chinese_subject_offset["ap"]=chinese_subject_offset["s"]=chinese_subject_offset["adv+"]=chinese_subject_offset["adv"]=chinese_subject_offset["high"]=-0.3;
+    chinese_subject_offset["mid+"]=chinese_subject_offset["mid"]=-0.4;
+    chinese_subject_offset["low"]=chinese_subject_offset["entry"]=-0.5;
+    map<string,double,levelcmp>english_subject_offset;
+    english_subject_offset["ib"]=english_subject_offset["ap"]=0;
+    english_subject_offset["h+"]=-0.1;
+    english_subject_offset["h"]=-0.2;
+    english_subject_offset["s+"]=-0.4;
+    english_subject_offset["s"]=-0.5;
+    //CONFIGURE SUBJECT WEIGHTS HERE
+    subject_configuration["math"]=(subj){6,non_language_subject_offset};
+    subject_configuration["english"]=(subj){6.5,english_subject_offset};
+    subject_configuration["history"]=(subj){4,non_language_subject_offset};
+    subject_configuration["chinese"]=(subj){3,chinese_subject_offset};
+    subject_configuration["elective"]=(subj){3,non_language_subject_offset};
+    subject_configuration["chemistry"]=(subj){3,non_language_subject_offset};
+    subject_configuration["physics"]=(subj){3,non_language_subject_offset};
+    //CONFIGURE SUBJECT ALTERNATIVE NAMES HERE
+    multimap<string,string>subjectshortcuts;
+    subjectshortcuts.insert(pair<string,string>("eng","english"));
+    subjectshortcuts.insert(pair<string,string>("hist","history"));
+    subjectshortcuts.insert(pair<string,string>("elec","elective"));
+    subjectshortcuts.insert(pair<string,string>("it","elective"));
+    subjectshortcuts.insert(pair<string,string>("bio","elective"));
+    subjectshortcuts.insert(pair<string,string>("geo","elective"));
+    subjectshortcuts.insert(pair<string,string>("econ","elective"));
+    subjectshortcuts.insert(pair<string,string>("chi","chinese"));
+    subjectshortcuts.insert(pair<string,string>("chem","chemistry"));
+    subjectshortcuts.insert(pair<string,string>("phys","physics"));
+    /* -----CONFIGURE SUBJECTS----- */
