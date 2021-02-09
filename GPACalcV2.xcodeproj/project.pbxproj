@@ -23,6 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F0732D4825D22C0100DF4732 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		F089FA96237C09FD001D8D30 /* GPACalcV2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GPACalcV2; sourceTree = BUILT_PRODUCTS_DIR; };
 		F089FA99237C09FD001D8D30 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -41,6 +42,7 @@
 		F089FA8D237C09FD001D8D30 = {
 			isa = PBXGroup;
 			children = (
+				F0732D4825D22C0100DF4732 /* LICENSE */,
 				F089FA98237C09FD001D8D30 /* GPACalcV2 */,
 				F089FA97237C09FD001D8D30 /* Products */,
 			);
